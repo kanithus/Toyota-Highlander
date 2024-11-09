@@ -1,2 +1,7 @@
-{ "commands": []
+{ "commands": [
+  { "hdr": "700", "rax": "", "cmd": {"22": "1074"}, "freq": 1,
+  "signals": [
+    {"id": "HIGHLANDER_OIL_PRES", "path": "Engine", "fmt": {"bix": 8, "len": 16, "max": 100, "mul": 0.078125, "unit": "kilopascal" }, "name": "Engine oil pressure", "description": "Don't have the response prefix for this yet."}
+  ]}
+]
 }
