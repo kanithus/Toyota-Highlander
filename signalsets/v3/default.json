@@ -9,10 +9,17 @@
   ]},
   { "hdr": "750", "rax": "", "fcm1": true, "cmd": {"22": "1005"}, "freq": 15,
   "signals": [
-    {"id": "HIGHLANDER_TP_FL", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 10, "mul": 0.01373, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure", "description": "Need response prefix."},
+    {"id": "HIGHLANDER_TP_FL", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 10, "mul": 0.01373, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure", "description": "Need response prefix. Note for tire sensors: location may not be standardized and the programmed location is reported by 222021 where 1-4 is FL, FR, RL, RR respectively."},
     {"id": "HIGHLANDER_TP_FR", "path": "Tires", "fmt": {"bix": 24,  "len": 8, "max": 10, "mul": 0.01373, "unit": "bars" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure", "description": "Need response prefix."},
     {"id": "HIGHLANDER_TP_RL", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 10, "mul": 0.01373, "unit": "bars" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure", "description": "Need response prefix."},
     {"id": "HIGHLANDER_TP_RR", "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 10, "mul": 0.01373, "unit": "bars" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure", "description": "Need response prefix."}
+  ]},
+  { "hdr": "750", "rax": "", "fcm1": true, "cmd": {"22": "1004"}, "freq": 15,
+  "signals": [
+    {"id": "HIGHLANDER_TT_FL", "path": "Tires", "fmt": {"bix": 0,  "len": 8, "min": -30, "max": 100, "add": -40, "unit": "celsius" }, "name": "Front left tire temperature", "description": "Need response prefix.Note for tire sensors: location may not be standardized and the programmed location is reported by 222021 where 1-4 is FL, FR, RL, RR respectively."},
+    {"id": "HIGHLANDER_TT_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "min": -30, "max": 100, "add": -40, "unit": "celsius" }, "name": "Front right tire temperature", "description": "Need response prefix."},
+    {"id": "HIGHLANDER_TT_RL", "path": "Tires", "fmt": {"bix": 16,  "len": 8, "min": -30, "max": 100, "add": -40, "unit": "celsius" }, "name": "Rear left tire temperature",   "description": "Need response prefix."},
+    {"id": "HIGHLANDER_TT_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "min": -30, "max": 100, "add": -40, "unit": "celsius" }, "name": "Rear right tire temperature",  "description": "Need response prefix."}
   ]}
 ]
 }
