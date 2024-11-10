@@ -20,6 +20,13 @@
     {"id": "HIGHLANDER_TT_FR", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "min": -30, "max": 100, "add": -40, "unit": "celsius" }, "name": "Front right tire temperature", "description": "Need response prefix."},
     {"id": "HIGHLANDER_TT_RL", "path": "Tires", "fmt": {"bix": 16,  "len": 8, "min": -30, "max": 100, "add": -40, "unit": "celsius" }, "name": "Rear left tire temperature",   "description": "Need response prefix."},
     {"id": "HIGHLANDER_TT_RR", "path": "Tires", "fmt": {"bix": 24, "len": 8, "min": -30, "max": 100, "add": -40, "unit": "celsius" }, "name": "Rear right tire temperature",  "description": "Need response prefix."}
+  ]},
+  { "hdr": "7B0", "rax": "7B8", "cmd": {"21": "03"}, "freq": 0.25,
+  "signals": [
+    {"id": "HIGHLANDER_TIRE_FR_SPD", "path": "Movement", "fmt": {           "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "HIGHLANDER_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "HIGHLANDER_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "HIGHLANDER_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]}
 ]
 }
