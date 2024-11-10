@@ -5,7 +5,7 @@
   ]},
   { "hdr": "7B3", "rax": "", "cmd": {"22": "1004"}, "freq": 0.25,
   "signals": [
-    {"id": "HIGHLANDER_STEERING_ANGLE", "path": "Control", "fmt": {"bix": 8, "len": 16, "min": -410 "max": 410, "mul": 1.5, "unit": "degrees" }, "name": "Engine oil pressure", "description": "Don't have the response prefix for this yet."}
+    {"id": "HIGHLANDER_STEER_ANGLE", "path": "Control", "fmt": {"bix": 8, "len": 16, "min": -410 "max": 410, "mul": 1.5, "unit": "degrees" }, "name": "Engine oil pressure", "description": "Don't have the response prefix for this yet."}
   ]},
   { "hdr": "750", "rax": "", "fcm1": true, "cmd": {"22": "1005"}, "freq": 15,
   "signals": [
